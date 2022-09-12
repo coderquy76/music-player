@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Fontawesome_pro_v5/css/all.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <div id="menu">
+        <div>
+          <span id="click-menu"><i class="fal fa-bars"></i></span>
+          <!-- <span id="demo">pp</span> -->
+        </div>
+        <div id="list" class="list">
+          <!-- <div class="list-01">
+            <div class="primary-song">
+              <p class="">hoa thuyen</p>
+              <span class="">Ngeh si chua biet</span>
+            </div>
+            <div class="current-sonng"></div>
+          </div> -->
+        </div>
+      </div>
+      <div id="main">
+        <div class="thumb">
+          <div class="cycle" id="cd-thumb"></div>
+        </div>
+        <div class="process">
+          <div class="range">
+            <input
+              class="styled-slider slider-progress"
+              type="range"
+              name=""
+              id="my-range"
+              min="0"
+              max="0"
+              step="1"
+            />
+          </div>
+          <div class="timer">
+            <span class="s-time" id="time-start">0:00</span>
+            <span class="s-time" id="time-end">0:01</span>
+          </div>
+        </div>
+        <audio id="audio" src=""></audio>
+        <div class="song-info" id="songInfo" style="margin: 10px 0">
+          <div class="song-name">
+            <span class="" id="song-name"> Music Player </span>
+          </div>
+          <div class="artist">
+            <span class="" id="singer">Quy-newbie</span>
+          </div>
+        </div>
+
+        <div class="orginal-list-events">
+          <div class="btn-left f-div">
+            <button type="button" class="oc-btn" id="back">
+              <i
+                class="fal fa-step-forward"
+                style="transform: rotate(180deg)"
+              ></i>
+            </button>
+          </div>
+
+          <div class="control f-div" id="control">
+            <button
+              type="button"
+              id="a-continue"
+              class="oc-btn control-btn a-continue"
+            >
+              <i class="fal fa-caret-circle-right"></i>
+            </button>
+            <button
+              type="button"
+              id="a-pause"
+              class="oc-btn control-btn a-pause"
+            >
+              <i class="fal fa-pause-circle"></i>
+            </button>
+          </div>
+
+          <div class="btn-right f-div">
+            <button type="button" class="oc-btn" id="next">
+              <i class="fal fa-step-forward"></i>
+            </button>
+          </div>
+        </div>
+        <div class="advanced-list-events">
+          <div>
+            <button type="button" id="repeat" class="oc-btn-01">
+              <i class="fal fa-repeat-1"></i>
+            </button>
+          </div>
+          <div class="" style="width: 54px">
+            <button
+              type="button"
+              id="speed"
+              class="oc-btn-01"
+              style="transform: rotate(45deg)"
+            >
+              <i class="fal fa-plus"></i>
+            </button>
+            <span id="show-speed" class="">1</span>
+          </div>
+          <div class="">
+            <button type="button" id="sleep" class="oc-btn-01">
+              <i class="fal fa-alarm-snooze"></i>
+            </button>
+          </div>
+          <div class="">
+            <button type="button" id="random" class="oc-btn-01">
+              <i class="fal fa-random"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="note" class="note">
+        <div class="note-1">
+          <b id="note-content"></b>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/index.js"></script>
+</html>
